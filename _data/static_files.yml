@@ -1388,6 +1388,9 @@
 - path: offended/im-an-adult.gif
   modified_time: 1411014207
   extname: ".gif"
+- path: oh-shit/fireworks.gif
+  modified_time: 1416527949
+  extname: ".gif"
 - path: oh-shit/flailing-arms-3.gif
   modified_time: 1411014207
   extname: ".gif"
@@ -1561,6 +1564,12 @@
   extname: ".gif"
 - path: silly-animals/dancing-polar-bear.gif
   modified_time: 1411011771
+  extname: ".gif"
+- path: silly-animals/fuck-cat-laser.gif
+  modified_time: 1416527900
+  extname: ".gif"
+- path: silly-animals/fuck-these-things-cat.gif
+  modified_time: 1416527748
   extname: ".gif"
 - path: silly-animals/funny-gif-pandas-falling-tree.gif
   modified_time: 1411014209
