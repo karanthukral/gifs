@@ -84,6 +84,11 @@
   extname: ".gif"
   w: 440
   h: 225
+- path: badass/explosive-win.gif
+  modified_time: 1425343428
+  extname: ".gif"
+  w: 400
+  h: 225
 - path: badass/skate-rope.gif
   modified_time: 1411014198
   extname: ".gif"
@@ -2390,7 +2395,7 @@
   w: 358
   h: 201
 - path: shopify/kpd-looping-forever-and-ever.gif
-  modified_time: 1409155150
+  modified_time: 1424718118
   extname: ".gif"
   w: 320
   h: 180
