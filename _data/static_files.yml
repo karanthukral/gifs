@@ -1274,6 +1274,11 @@
   extname: ".gif"
   w: 503
   h: 283
+- path: lolwat/deleting-pc.gif
+  modified_time: 1436283393
+  extname: ".gif"
+  w: 400
+  h: 222
 - path: lolwat/dj-spok.gif
   modified_time: 1435693795
   extname: ".gif"
