@@ -3,6 +3,7 @@
 require 'builder'
 require 'fileutils'
 require 'yaml'
+require 'fastimage'
 
 def dir_blacklist
   ["css", "sass", "script"]
@@ -24,7 +25,9 @@ def liquid_info_for_file(dir, filename)
   {
     "path"          => path,
     "modified_time" => File.mtime(path).to_i,
-    "extname"       => File.extname(path)
+    "extname"       => File.extname(path),
+    "w"             => (image_size = FastImage.size(path))[0],
+    "h"             => image_size[1]
   }
 end
 
@@ -36,21 +39,23 @@ list = Builder::XmlMarkup.new(
 
 dirs  = get_gif_dirs
 files = []
-
+index = 0
 list.ul do |builder|
   dirs.each do |dir|
     builder.li do |dir_element|
       dir_element.text!(dir)
       dir_element.ul do |ul|
-        Dir.glob("#{dir}/*.gif") do |gif|
+        Dir.glob("#{dir}/**/*.gif") do |gif|
           files << liquid_info_for_file(dir, gif)
           ul.li do |li|
             li.a(
               File.basename(gif),
               "href"  => gif,
               "title" => gif,
-              "class" => "gif"
+              "class" => "gif",
+              "onclick" => "openGallery(#{index})"
             )
+            index += 1
           end
         end
       end
